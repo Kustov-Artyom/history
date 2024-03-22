@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    height: 100%;
+}
+
+/* ---------------header-------------- */
+
+.title-a {
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+
+.hat {
+    background-color: rgb(255, 188, 64);
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.hat h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.button__head {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    top: 95px;
+    left: 290px;
+    font-size: 18px;
+}
+
+.link__head {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.link__head::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -8px;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    outline: none;
+}
+
+.link__head::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -6px;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    transform-origin: right center;
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+    outline: none;
+}
+
+.link__head:hover::after,
+.link__head:focus::after {
+    transform: scaleX(1);
+    outline: none;
+}
+
+.link__head:hover::before,
+.link__head:focus::before {
+    transform: scaleX(0);
+    outline: none;
+}
+
+/* -------------main-------------- */
+
+main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.fon {
+    background-color: white;
+    width: 920px;
+    height: 100%;
+    margin-left: 310px;
+}
+
+.fon h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.text {
+    margin: 20px 20px 20px 20px;
+}
+
+.text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text img,
+.text figcaption {
+    margin-left: 90px;
+    color: rgba(128, 128, 128, 0.76);
+}
+
+.beer__img1 {
+    width: 626px;
+    height: 480px;
+    object-fit: cover;
+}
+
+/* -------------footer-------------- */
+
+footer {
+    height: 150px;
+    background-color: rgb(255, 188, 64);
+}
+
+.text__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.back__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 124, 76);
+    width: 45px;
+    text-decoration: none;
+    color: black;
+    height: 45px;
+    border: none;
+    outline: 0px rgba(255, 255, 255, 0.479) solid;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.479);
+    transition: all 0.3s;
+}
+
+.back:hover,
+.back:focus {
+    box-shadow: 0px 0px 0px 4px orangered;
+    outline-offset: 5px;
+    outline: 4px solid rgba(255, 255, 255, 0.479);
+}
