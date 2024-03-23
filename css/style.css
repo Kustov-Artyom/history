@@ -37,7 +37,7 @@ body {
     justify-content: space-around;
     width: 60%;
     top: 95px;
-    left: 290px;
+    left: 370px;
     font-size: 18px;
 }
 
@@ -100,9 +100,9 @@ main {
 
 .fon {
     background-color: white;
-    width: 920px;
+    width: 990px;
     height: 100%;
-    margin-left: 310px;
+    margin-left: 455px;
 }
 
 .fon h1 {
@@ -127,7 +127,7 @@ main {
 
 .text img,
 .text figcaption {
-    margin-left: 90px;
+    margin-left: 150px;
     color: rgba(128, 128, 128, 0.76);
 }
 
@@ -135,6 +135,7 @@ main {
     width: 626px;
     height: 480px;
     object-fit: cover;
+    margin-top: 20px;
 }
 
 /* -------------footer-------------- */
